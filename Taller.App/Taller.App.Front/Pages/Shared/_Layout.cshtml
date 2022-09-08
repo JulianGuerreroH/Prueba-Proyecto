@@ -19,7 +19,8 @@
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" role="button"
+                    aria-label="Button group with nested dropdown">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
@@ -31,11 +32,21 @@
                             <!-- Link a la pagina de mecanico -->
                             <a class="nav-link text-dark" asp-area="" asp-page="/Mecanico/GestionMecanico">Mecánico</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Administrador/GestionAdministrador">Administrador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Administrador/GestionAdministrador">Administrador</a>
+                        <!-- Dropdown jefe operaciones -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Jefe de Operaciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/Administrador/GestionAdministrador">Consultar
+                                        Vehículos Registrados</a></li>
+                                <li><a class="dropdown-item" href="/Administrador/GestorAdminPlaca">Consultar Placa</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Agregar Mecánico</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
