@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\TOSHIBA\\.nuget\\packages\\": {}
+    "C:\\Users\\JulianDavidGuerreroH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TOSHIBA\\Documents\\Julian G\\MinTic\\DS3\\Prueba-Proyecto\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+      "projectUniqueName": "C:\\Users\\JulianDavidGuerreroH\\OneDrive - Green Loop Ltda\\Documentos\\JG\\GIT\\Prueba-Proyecto\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
       "projectName": "Taller.App.Front",
-      "projectPath": "C:\\Users\\TOSHIBA\\Documents\\Julian G\\MinTic\\DS3\\Prueba-Proyecto\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
-      "packagesPath": "C:\\Users\\TOSHIBA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TOSHIBA\\Documents\\Julian G\\MinTic\\DS3\\Prueba-Proyecto\\Taller.App\\Taller.App.Front\\obj\\",
+      "projectPath": "C:\\Users\\JulianDavidGuerreroH\\OneDrive - Green Loop Ltda\\Documentos\\JG\\GIT\\Prueba-Proyecto\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+      "packagesPath": "C:\\Users\\JulianDavidGuerreroH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JulianDavidGuerreroH\\OneDrive - Green Loop Ltda\\Documentos\\JG\\GIT\\Prueba-Proyecto\\Taller.App\\Taller.App.Front\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TOSHIBA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\JulianDavidGuerreroH\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
