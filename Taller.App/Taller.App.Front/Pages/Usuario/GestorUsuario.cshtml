@@ -1,0 +1,304 @@
+﻿@page
+@model Taller.App.Front.Pages.GestorUsuarioModel
+@{
+}
+
+<h3>REGISTRO USUARIO</h3>
+<!-- form-control is-valid / is-invalid Como funciona ? -->
+<form class="row g-3">
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label">Nombres</label>
+        <input type="text" class="form-control" id="validationServer01" value="Mark" required>
+        <div class="valid-feedback">
+            Correcto!
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer02" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="validationServer02" value="Otto" required>
+        <div class="valid-feedback">
+            Correcto!
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServerUsername" class="form-label">Usuario</label>
+        <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3"></span>
+            <input type="text" class="form-control" id="validationServerUsername"
+                aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                Ingrese un usario
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer04" class="form-label">Identificación</label>
+        <input type="text" class="form-control" id="validationServer04" aria-describedby="validationServer04Feedback"
+            required>
+        <div id="validationServer04Feedback" class="invalid-feedback">
+            Ingrese su id.
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer05" class="form-label">Ciudad</label>
+        <select class="form-select" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+            <option selected disabled value="">Seleccione...</option>
+            <option>Leticia</option>
+            <option>Medellín</option>
+            <option>Rionegro</option>
+            <option>Apartadó</option>
+            <option>Turbo</option>
+            <option>Caucasia</option>
+            <option>Ciudad de Arauca</option>
+            <option>Barranquilla</option>
+            <option>Bogotá D.C</option>
+            <option>Girardot</option>
+            <option>Fusagasugá</option>
+            <option>Cartagena</option>
+            <option>Tunja</option>
+            <option>Duitama</option>
+            <option>Sogamoso</option>
+            <option>Manizales</option>
+            <option>Florencia</option>
+            <option>Yopal</option>
+            <option>Popayán</option>
+            <option>Valledupar</option>
+            <option>Quibdó</option>
+            <option>Montería</option>
+            <option>Inírida</option>
+            <option>San José</option>
+            <option>Neiva</option>
+            <option>Riohacha</option>
+            <option>Maicao</option>
+            <option>Santa Marta</option>
+            <option>Ciénaga</option>
+            <option>Villavicencio</option>
+            <option>Pasto</option>
+            <option>Ipiales</option>
+            <option>Tumaco</option>
+            <option>Cúcuta</option>
+            <option>Ocaña</option>
+            <option>Pamplona</option>
+            <option>Mocoa</option>
+            <option>Puerto Asís</option>
+            <option>Armenia</option>
+            <option>Pereira</option>
+            <option>Ciudad de San Andrés</option>
+            <option>Bucaramanga</option>
+            <option>Barrancabermeja</option>
+            <option>San Gil</option>
+            <option>Málaga</option>
+            <option>Sincelejo</option>
+            <option>Ibagué</option>
+            <option>Honda</option>
+            <option>Cali</option>
+            <option>Tuluá</option>
+            <option>Palmira</option>
+            <option>Buenaventura</option>
+            <option>Cartago</option>
+            <option>Buga</option>
+            <option>Mitú</option>
+            <option>Puerto Carreño</option>
+        </select>
+        <div id="validationServer05Feedback" class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer06" class="form-label">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" id="validationServer06" aria-describedby="validationServer05Feedback"
+            required>
+        <div id="validationServer06Feedback" class="invalid-feedback">
+            Ingrese una fecha
+        </div>
+    </div>
+    <div class="col-md-8">
+        <label for="validationServer07" class="form-label">Correo</label>
+        <input type="mail" class="form-control" id="validationServer07" aria-describedby="validationServer07Feedback"
+            required>
+        <div id="validationServer07Feedback" class="invalid-feedback">
+            Ingrese su correo
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer08" class="form-label">Célular</label>
+        <input type="tel" class="form-control" id="validationServer08" aria-describedby="validationServer08Feedback"
+            required>
+        <div id="validationServer08Feedback" class="invalid-feedback">
+            Ingrese número ceéular
+        </div>
+    </div>
+    <br>
+    <h3>REGISTRO VEHÍCULO</h3>
+    <br>
+    <div class="col-md-4">
+        <label for="validationServer09" class="form-label">Placa Vehículo</label>
+        <input type="text" class="form-control" id="validationServer09" aria-describedby="validationServer09Feedback"
+            required>
+        <div id="validationServer09Feedback" class="invalid-feedback">
+            Ingrese la placa del Vehículo
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer10" class="form-label">Marca Vehículo</label>
+        <select class="form-select" id="validationServer10" aria-describedby="validationServer10Feedback" required>
+            <option selected disabled value="">Seleccione...</option>
+            <option>Volkswagen</option>
+            <option>Hyundai</option>
+            <option>Toyota</option>
+            <option>Suzuki</option>
+            <option>Nissan</option>
+            <option>Mazda </option>
+            <option>Ford</option>
+            <option>Kia</option>
+            <option>Renault</option>
+            <option>Chevrolet</option>
+        </select>
+        <div id="validationServer10Feedback" class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer11" class="form-label">Tipo Vehículo</label>
+        <select class="form-select" id="validationServer11" aria-describedby="validationServer11Feedback" required>
+            <option selected disabled value="">Seleccione...</option>
+            <option>Camiones</option>
+            <option>Pick Up</option>
+            <option>Van</option>
+            <option>Comerciales </option>
+            <option>Deportivos</option>
+            <option>SUV </option>
+            <option>Hatchback </option>
+            <option>Sedán</option>
+        </select>
+        <div id="validationServer11Feedback" class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationServer09" class="form-label">Número Pasajeros</label>
+        <input type="number" min="0" class="form-control" id="validationServer09"
+            aria-describedby="validationServer09Feedback" required>
+        <div id="validationServer09Feedback" class="invalid-feedback">
+            Ingrese la placa del Vehículo
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationServer09" class="form-label">Modelo Vehículo</label>
+        <input type="number" min="1900" max="2099" step="1" value="2016" class="form-control" id="validationServer09"
+            aria-describedby="validationServer09Feedback" required>
+        <div id="validationServer09Feedback" class="invalid-feedback">
+            Ingrese la placa del Vehículo
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationServer09" class="form-label">Cilindrada motor[cm3]</label>
+        <input type="number" min="0" class="form-control" id="validationServer09"
+            aria-describedby="validationServer09Feedback" required>
+        <div id="validationServer09Feedback" class="invalid-feedback">
+            Ingrese la placa del Vehículo
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationServer05" class="form-label">Ciudad de origen Vehículo</label>
+        <select class="form-select" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+            <option selected disabled value="">Seleccione...</option>
+            <option>Leticia</option>
+            <option>Medellín</option>
+            <option>Rionegro</option>
+            <option>Apartadó</option>
+            <option>Turbo</option>
+            <option>Caucasia</option>
+            <option>Ciudad de Arauca</option>
+            <option>Barranquilla</option>
+            <option>Bogotá D.C</option>
+            <option>Girardot</option>
+            <option>Fusagasugá</option>
+            <option>Cartagena</option>
+            <option>Tunja</option>
+            <option>Duitama</option>
+            <option>Sogamoso</option>
+            <option>Manizales</option>
+            <option>Florencia</option>
+            <option>Yopal</option>
+            <option>Popayán</option>
+            <option>Valledupar</option>
+            <option>Quibdó</option>
+            <option>Montería</option>
+            <option>Inírida</option>
+            <option>San José</option>
+            <option>Neiva</option>
+            <option>Riohacha</option>
+            <option>Maicao</option>
+            <option>Santa Marta</option>
+            <option>Ciénaga</option>
+            <option>Villavicencio</option>
+            <option>Pasto</option>
+            <option>Ipiales</option>
+            <option>Tumaco</option>
+            <option>Cúcuta</option>
+            <option>Ocaña</option>
+            <option>Pamplona</option>
+            <option>Mocoa</option>
+            <option>Puerto Asís</option>
+            <option>Armenia</option>
+            <option>Pereira</option>
+            <option>Ciudad de San Andrés</option>
+            <option>Bucaramanga</option>
+            <option>Barrancabermeja</option>
+            <option>San Gil</option>
+            <option>Málaga</option>
+            <option>Sincelejo</option>
+            <option>Ibagué</option>
+            <option>Honda</option>
+            <option>Cali</option>
+            <option>Tuluá</option>
+            <option>Palmira</option>
+            <option>Buenaventura</option>
+            <option>Cartago</option>
+            <option>Buga</option>
+            <option>Mitú</option>
+            <option>Puerto Carreño</option>
+        </select>
+        <div id="validationServer05Feedback" class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+    <h5>Accesorios adicionales - Vehículo</h5>
+
+    <div class="form-check col-md">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Equipo de sonido / radio
+        </label>
+    </div>
+    <div class="form-check col-md">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Aire acondicionado
+        </label>
+    </div>
+    <div class="form-check col-md">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            TV
+        </label>
+    </div>
+    <br><br><br><br>
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
+                aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+                Acepta terminos y condiciones
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                Debe estar de acuerdo antes de continuar
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Guardar</button>
+</form>
+<br>
+<br>
