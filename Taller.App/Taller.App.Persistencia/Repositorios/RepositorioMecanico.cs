@@ -23,5 +23,35 @@ namespace Taller.App.Persistencia.Repositorios
             this.dbContext.SaveChanges();
             return mecanicoNuevo.Entity; //para convertirlo en entidad
         }
+
+        public IEnumerable<Mecanico> ObtenerMecanicos(){
+            return this.dbContext.Mecanicos;
+
+        }
+
+        public Mecanico BuscarMecanico(string idMecanico){
+            return this.dbContext.Mecanicos.FirstOrDefault(mec => mec.id == mec.idMecanico);
+        }
+
+        public void EditarMecanico(Mecanico mecanicoNuevo){
+            var mecanicoActual = this.dbContext.Mecanicos.FirstOrDefault( m => m.id == m.idMecanico);
+            if(mecanicoActual != null){
+                mecanicoActual.nombre = mecanicoNuevo.nombre;
+                mecanicoActual.fechaNacimiento = mecanicoNuevo.fechaNacimiento;
+                mecanicoActual.telefono = mecanicoNuevo.telefono;
+                mecanicoActual.contrasenia = mecanicoNuevo.contrasenia;
+            }
+            this.dbContext.Mecanicos.SaveChanges();
+        }
+
+        public Mecanico EliminarMecanico(string idMecanico){
+            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault( m => m.id == m.idMecanico);
+            if(mecanicoEncontrado != null){
+                this.dbContext.Mecanicos.Remove(mecanicoEncontrado);
+                this.dbContext.SaveChanges();
+            }
+
+
+        }
     }
 }

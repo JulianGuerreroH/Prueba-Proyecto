@@ -18,7 +18,12 @@ namespace Taller.App.Consola
         {
             Console.WriteLine("");
             //Console.WriteLine("Imprimiento desde la consola");
-            AgregarMecanico(); //llamamos el metodo en el main, esto es lo que se hace en el front
+            //AgregarMecanico(); //llamamos el metodo en el main, esto es lo que se hace en el front
+            //ObtenerMecanicos();
+            BuscarMecanico();
+            //EditarMecanico();
+            //EliminarMecanico();
+        
         }
         static void AgregarMecanico()
         {
@@ -34,6 +39,35 @@ namespace Taller.App.Consola
             };
 
             repoMecanico.AgregarMecanico(mecanico); //Lammamos la funcion y le enviamos el mecanico creado
+        }
+
+        static void ObtenerMecanicos(){
+            //Console.WriteLine(repoMecanico.ObtenerMecanicos().ToString());
+            foreach (var mecanico in repoMecanico.ObtenerMecanicos()){
+                Console.WriteLine(mecanico.nombre.ToString());
+            }
+        }
+
+        static void BuscarMecanico(){
+            Console.WriteLine(repoMecanico.BuscarMecanico("23"));
+        }
+
+        static void EditarMecanico(){
+            var mecanico = new Mecanico
+            {
+                id = "",
+                nombre = "Pablito",
+                fechaNacimiento = "50",
+                nivelEstudio = "Tecnico",
+                telefono = "122",
+                contrasenia = "783",
+                //rol = "jefe de operaciones"
+            };
+            repoMecanico.EditarMecanico(mecanico);
+        }
+
+        static void EliminarMecanico(){
+            Console.WriteLine(repoMecanico.BuscarMecanico("23"));
         }
     }
 }
