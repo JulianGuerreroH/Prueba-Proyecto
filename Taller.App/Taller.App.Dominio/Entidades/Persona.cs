@@ -12,5 +12,6 @@ namespace Taller.App.Dominio.Entidades
         public string telefono {get; set;}
         public string fechaNacimiento {get; set;}
         public string contrasenia {get; set;}
+        //public string rol {get; set;}
     }
 }
