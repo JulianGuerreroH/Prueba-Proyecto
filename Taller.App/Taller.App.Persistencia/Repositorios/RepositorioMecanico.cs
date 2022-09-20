@@ -42,6 +42,7 @@ namespace Taller.App.Persistencia.Repositorios
                 mecanicoActual.fechaNacimiento = mecanicoNuevo.fechaNacimiento;
                 mecanicoActual.telefono = mecanicoNuevo.telefono;
                 mecanicoActual.contrasenia = mecanicoNuevo.contrasenia;
+                mecanicoActual.nivelEstudio = mecanicoNuevo.nivelEstudio;
                 this.dbContext.SaveChanges();
             }
         }

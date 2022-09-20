@@ -20,8 +20,8 @@ namespace Taller.App.Consola
             //Console.WriteLine("Imprimiento desde la consola");
             AgregarMecanico(); //llamamos el metodo en el main, esto es lo que se hace en el front
             //ObtenerMecanicos();
-            BuscarMecanico("30");
-            //EditarMecanico("24");
+            //BuscarMecanico("30");
+            //EditarMecanico("23");
             //EliminarMecanico("30");
 
         }
@@ -29,12 +29,12 @@ namespace Taller.App.Consola
         {
             var mecanico = new Mecanico
             {
-                id = "30",
-                nombre = "Camilo",
-                fechaNacimiento = "15",
-                nivelEstudio = "Tecnico",
-                telefono = "2789",
-                contrasenia = "456789",
+                id = "5",
+                nombre = "Charly",
+                fechaNacimiento = "05/05/2010",
+                nivelEstudio = "Mecanico",
+                telefono = "1111",
+                contrasenia = "0000",
                 //rol = "jefe de operaciones"
             };
 
@@ -62,11 +62,11 @@ namespace Taller.App.Consola
             var mecanico = new Mecanico
             {
                 id = "",
-                nombre = "Pablito",
-                fechaNacimiento = "50",
-                nivelEstudio = "Tecnico",
-                telefono = "122",
-                contrasenia = "123456",
+                nombre = "Orlando",
+                fechaNacimiento = "22/10/1992",
+                nivelEstudio = "Bachiller",
+                telefono = "5555",
+                contrasenia = "123456"
                 //rol = "jefe de operaciones"
             };
             repoMecanico.EditarMecanico(mecanico, id);

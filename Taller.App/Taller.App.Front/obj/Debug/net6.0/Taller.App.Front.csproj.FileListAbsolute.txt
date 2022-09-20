@@ -50,3 +50,40 @@ C:\Users\JulianDavidGuerreroH\OneDrive - Green Loop Ltda\Documentos\JG\GIT\Prueb
 C:\Users\JulianDavidGuerreroH\OneDrive - Green Loop Ltda\Documentos\JG\GIT\Prueba-Proyecto\Taller.App\Taller.App.Front\obj\Debug\net6.0\Taller.App.Front.pdb
 C:\Users\JulianDavidGuerreroH\OneDrive - Green Loop Ltda\Documentos\JG\GIT\Prueba-Proyecto\Taller.App\Taller.App.Front\obj\Debug\net6.0\Taller.App.Front.genruntimeconfig.cache
 C:\Users\JulianDavidGuerreroH\OneDrive - Green Loop Ltda\Documentos\JG\GIT\Prueba-Proyecto\Taller.App\Taller.App.Front\obj\Debug\net6.0\ref\Taller.App.Front.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Taller.App.Dominio.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Taller.App.Persistencia.dll
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Taller.App.Persistencia.pdb
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\bin\Debug\net6.0\Taller.App.Dominio.pdb
+C:\Users\TOSHIBA\Documents\Julian G\MinTic\DS3\Prueba-Proyecto\Taller.App\Taller.App.Front\obj\Debug\net6.0\Taller.App.Front.csproj.CopyComplete
