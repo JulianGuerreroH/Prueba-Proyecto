@@ -23,35 +23,37 @@ namespace Taller.App.Persistencia.Repositorios
             this.dbContext.SaveChanges();
             return mecanicoNuevo.Entity; //para convertirlo en entidad
         }
-
-        public IEnumerable<Mecanico> ObtenerMecanicos(){
+        public IEnumerable<Mecanico> ObtenerMecanicos()
+        {
             return this.dbContext.Mecanicos;
-
         }
 
-        public Mecanico BuscarMecanico(string idMecanico){
-            return this.dbContext.Mecanicos.FirstOrDefault(mec => mec.id == mec.idMecanico);
+        public Mecanico BuscarMecanico(string idMecanico)
+        {
+            return this.dbContext.Mecanicos.FirstOrDefault(m => m.id == idMecanico);
         }
 
-        public void EditarMecanico(Mecanico mecanicoNuevo){
-            var mecanicoActual = this.dbContext.Mecanicos.FirstOrDefault( m => m.id == m.idMecanico);
-            if(mecanicoActual != null){
+        public void EditarMecanico(Mecanico mecanicoNuevo, string id)
+        {
+            var mecanicoActual = this.dbContext.Mecanicos.FirstOrDefault(m => m.id == id);
+            if (mecanicoActual != null)
+            {
                 mecanicoActual.nombre = mecanicoNuevo.nombre;
                 mecanicoActual.fechaNacimiento = mecanicoNuevo.fechaNacimiento;
                 mecanicoActual.telefono = mecanicoNuevo.telefono;
                 mecanicoActual.contrasenia = mecanicoNuevo.contrasenia;
+                this.dbContext.SaveChanges();
             }
-            this.dbContext.Mecanicos.SaveChanges();
         }
 
-        public Mecanico EliminarMecanico(string idMecanico){
-            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault( m => m.id == m.idMecanico);
-            if(mecanicoEncontrado != null){
+        public void EliminarMecanico(string idMecanico)
+        {
+            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault(m => m.id == idMecanico);
+            if (mecanicoEncontrado != null)
+            {
                 this.dbContext.Mecanicos.Remove(mecanicoEncontrado);
                 this.dbContext.SaveChanges();
             }
-
-
         }
     }
 }
