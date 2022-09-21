@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -18,6 +19,16 @@ namespace Taller.App.Front.Pages
         {
             this.ObtenerMecanicos();
         }
+
+        public void OnPostAdd(Mecanico mec){
+            Console.WriteLine("Agrego: "+mec.nombre);
+            repoMecanico.AgregarMecanico(mec);
+            this.ObtenerMecanicos();
+        }  ///colocar luego del OnPostXxx un identidicador camelcase
+        public void OnPostDelete(string id){
+            repoMecanico.EliminarMecanico(id);
+            this.ObtenerMecanicos();
+        } 
         private void ObtenerMecanicos() // con este metodo llenamos la lista creada inicialmente
         {
             foreach (var mecanico in repoMecanico.ObtenerMecanicos())

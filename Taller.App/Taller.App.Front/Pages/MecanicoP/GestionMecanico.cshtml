@@ -3,6 +3,19 @@
 @{
 }
 
+<div class="class-contain-title">
+  <span>
+    Lista Mecanicos
+  </span>
+  <i class="bi bi-person-plus-fill class-icon-add" title="Agregar Mecanico" data-bs-toggle="modal"
+    data-bs-target="#idModalMecanico"></i>
+  <form class="d-flex" role="search" style="display: flex; gap: 10px; position: absolute; right: 100px;">
+    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Buscar</button>
+  </form>
+</div>
+<br><br>
+
 <table class="table table-dark table-striped">
   <thead>
     <tr>
@@ -11,6 +24,7 @@
       <th scope="col">Telofono</th>
       <th scope="col">Nivel de Estudio</th>
       <th scope="col">Fecha Nacimiento</th>
+      <th scope="col">Acciones</th>
     </tr>
   </thead>
   <tbody>
@@ -22,12 +36,87 @@
         <td>@m.telefono</td>
         <td>@m.nivelEstudio</td>
         <td>@m.fechaNacimiento</td>
+        <td style="display: flex;">
+          <i class="bi bi-pencil-fill class-icon-edit" title="Editar Mecanico"></i>
+          <form method="post">
+            <button class="bi bi-trash-fill class-icon-delete" title="Eliminar Mecanico" type="submit"
+              asp-page-handler="Delete" asp-route-id="@m.id"></button>
+          </form>
+        </td>
       </tr>
-
     }
 
   </tbody>
 </table>
+
+
+<!-- Button trigger modal 
+Se elimina el boton, luego de añadir el evento al icono agregar -->
+
+<!-- Modal -->
+<div class="modal fade" id="idModalMecanico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Mecanico</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post"> @*Metodo de hmtl*@
+
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="id-mec" class="col-form-label">Id:</label>
+              <input type="text" class="form-control" id="id-mec" name="id"> @*Cruza el nombre del elemento con lo que
+                ingresa el usuario y se quiete llevar a la base de datos, debe tener el mismo valor que se coloco en la
+                entidad !!!!*@
+            </div>
+            <div class="mb-3 col-6">
+              <label for="nombre-mecanico" class="col-form-label">Nombre:</label>
+              <!-- <textarea class="form-control" id="message-text"></textarea> para un cuadro de texto-->
+              <input type="text" class="form-control" id="nombre-mecanico" name="nombre">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="tel-mecanico" class="col-form-label">Telefono:</label>
+              <input type="text" class="form-control" id="tel-mecanico" name="telefono">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="nivel-estudio" class="col-form-label">Nivel de Estudio:</label>
+              <select class="form-select" aria-label="Default select example" name="nivelEstudio">
+                <option selected>Seleccione...</option>
+                <option value="Bachiller">Bachiller</option>
+                <option value="Tecnico">Tecnico</option>
+                <option value="Profesional">Profesional</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="fecha-mec" class="col-form-label">Fecha de Nacimiento:</label>
+              <input type="date" class="form-control" id="fecha-mec" name="fechaNacimiento">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="contrasenia-mec" class="col-form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="contrasenia-mec" name="contrasenia">
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary" asp-page-handler="Add">Agregar</button> @*Se coloca justo lo
+              que esta despues del OnPost, para que ejecute al oprimir el boton TIPO SUBMIT*@
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
 
 
 <div class="accordion" id="accordionExample">
