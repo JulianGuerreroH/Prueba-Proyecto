@@ -29,7 +29,7 @@ namespace Taller.App.Consola
         {
             var mecanico = new Mecanico
             {
-                id = "5",
+                mecanicoId = "5",
                 nombre = "Charly",
                 fechaNacimiento = "05/05/2010",
                 nivelEstudio = "Mecanico",
@@ -45,7 +45,7 @@ namespace Taller.App.Consola
             //Console.WriteLine(repoMecanico.ObtenerMecanicos().ToString());
             foreach (var mecanico in repoMecanico.ObtenerMecanicos())
             {
-                Console.WriteLine(mecanico.id + ", Nombre:" + mecanico.nombre);
+                Console.WriteLine(mecanico.mecanicoId + ", Nombre:" + mecanico.nombre);
             }
         }
 
@@ -61,7 +61,7 @@ namespace Taller.App.Consola
         {
             var mecanico = new Mecanico
             {
-                id = "",
+                mecanicoId = "",
                 nombre = "Orlando",
                 fechaNacimiento = "22/10/1992",
                 nivelEstudio = "Bachiller",

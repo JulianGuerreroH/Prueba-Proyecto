@@ -23,7 +23,7 @@ namespace Taller.App.Persistencia.Migrations
 
             modelBuilder.Entity("Taller.App.Dominio.Entidades.Mecanico", b =>
                 {
-                    b.Property<string>("id")
+                    b.Property<string>("mecanicoId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("contrasenia")
@@ -46,9 +46,27 @@ namespace Taller.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("mecanicoId");
 
                     b.ToTable("Mecanicos");
+                });
+
+            modelBuilder.Entity("Taller.App.Dominio.Entidades.Revision", b =>
+                {
+                    b.Property<string>("revisionId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("fechaRev")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("mecanicoId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("revisionId");
+
+                    b.ToTable("Revisiones");
                 });
 #pragma warning restore 612, 618
         }

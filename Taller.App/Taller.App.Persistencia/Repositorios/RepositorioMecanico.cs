@@ -30,12 +30,12 @@ namespace Taller.App.Persistencia.Repositorios
 
         public Mecanico BuscarMecanico(string idMecanico)
         {
-            return this.dbContext.Mecanicos.FirstOrDefault(m => m.id == idMecanico);
+            return this.dbContext.Mecanicos.FirstOrDefault(m => m.mecanicoId == idMecanico);
         }
 
         public void EditarMecanico(Mecanico mecanicoNuevo, string id)
         {
-            var mecanicoActual = this.dbContext.Mecanicos.FirstOrDefault(m => m.id == id);
+            var mecanicoActual = this.dbContext.Mecanicos.FirstOrDefault(m => m.mecanicoId == id);
             if (mecanicoActual != null)
             {
                 mecanicoActual.nombre = mecanicoNuevo.nombre;
@@ -49,7 +49,7 @@ namespace Taller.App.Persistencia.Repositorios
 
         public void EliminarMecanico(string idMecanico)
         {
-            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault(m => m.id == idMecanico);
+            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault(m => m.mecanicoId == idMecanico);
             if (mecanicoEncontrado != null)
             {
                 this.dbContext.Mecanicos.Remove(mecanicoEncontrado);

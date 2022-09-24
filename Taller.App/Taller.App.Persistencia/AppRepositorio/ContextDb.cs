@@ -1,3 +1,4 @@
+using System.Reflection.Emit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace Taller.App.Persistencia.AppRepositorio
     public class ContextDb : DbContext
     {
         public virtual DbSet<Mecanico> Mecanicos { get; set; }
-        
+        public virtual DbSet<Revision> Revisiones { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //metodo para conectarnos con la base de datos
@@ -28,6 +30,14 @@ namespace Taller.App.Persistencia.AppRepositorio
                 Console.WriteLine("Oucrrió un error en OnConfiguring");
                 throw;
             }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Revision>()
+            //.HasOne(b => b.mecanico)
+            //.WithOne(i => i.revision)
+            //.HasForeignKey<Revision>(b => b.mecanicoId);
         }
     }
 }

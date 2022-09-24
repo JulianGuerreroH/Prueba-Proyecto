@@ -7,6 +7,8 @@ namespace Taller.App.Dominio.Entidades
 {
     public class Mecanico: Persona
     {
+        public string mecanicoId { get; set; }
         public string nivelEstudio {get; set;}
+        //public Revision revision {get; set;}
     }
 }

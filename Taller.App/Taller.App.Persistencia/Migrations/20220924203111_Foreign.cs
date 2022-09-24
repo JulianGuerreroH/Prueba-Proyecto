@@ -4,7 +4,7 @@
 
 namespace Taller.App.Persistencia.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class Foreign : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,7 @@ namespace Taller.App.Persistencia.Migrations
                 name: "Mecanicos",
                 columns: table => new
                 {
-                    id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    mecanicoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     nivelEstudio = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -21,7 +21,20 @@ namespace Taller.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Mecanicos", x => x.id);
+                    table.PrimaryKey("PK_Mecanicos", x => x.mecanicoId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Revisiones",
+                columns: table => new
+                {
+                    revisionId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    fechaRev = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    mecanicoId = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Revisiones", x => x.revisionId);
                 });
         }
 
@@ -29,6 +42,9 @@ namespace Taller.App.Persistencia.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Mecanicos");
+
+            migrationBuilder.DropTable(
+                name: "Revisiones");
         }
     }
 }
